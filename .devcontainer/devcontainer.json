@@ -2,9 +2,10 @@
   "name": "Claude Code Sandbox",
   "image": "mcr.microsoft.com/devcontainers/base:bookworm",
   "features": {
+    "ghcr.io/devcontainers/features/node:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
   },
-  "remoteUser": "r-nagamine",
-  "postCreateCommand": "sudo chown -R r-nagamine:r-nagamine /home/r-nagamine/.claude"
+  "remoteUser": "vscode",
+  "postCreateCommand": "sudo chown -R vscode:vscode /home/vscode/.claude || true"
 }
